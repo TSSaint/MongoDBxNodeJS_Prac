@@ -1,4 +1,3 @@
-
 var express = require('express');
 var app = express();
 var engines = require('consolidate');
@@ -15,10 +14,10 @@ function errorHandler(err, req, res, next) {
 }
 
 app.get('/:name', function(req, res, next) {
-  var name = req.params.name;
-  var getvar1 = req.query.getvar1;
-  var getvar2 = req.query.getvar2;
-  res.render('hello', { name : name, getvar1 : getvar1, getvar2 : getvar2 });
+    var name = req.params.name;
+    var getvar1 = req.query.getvar1;
+    var getvar2 = req.query.getvar2;
+    res.render('hello', { name : name, getvar1 : getvar1, getvar2 : getvar2 });
 });
 
 app.use(errorHandler);
