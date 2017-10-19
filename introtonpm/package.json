@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "quick re-up on npm for purposes of using mongodb",
   "main": "app.js",
+  "repository": "https://github.com/TSSaint/MongoDBxNodeJS_Prac.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +13,10 @@
     "nodejs"
   ],
   "author": "T. Sebi Santos",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "consolidate": "^0.14.5",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33"
+  }
 }
