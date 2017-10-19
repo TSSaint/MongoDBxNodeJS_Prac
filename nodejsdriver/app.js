@@ -12,7 +12,7 @@ MongoClient.connect(url, function(err, db) {
   db.collection("movies").find({}).toArray(function(err, docs) {
     
     // print the docs
-    docs.forEact(function(doc) {
+    docs.forEach(function(doc) {
       console.log(doc.title);
     });
     
