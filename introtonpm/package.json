@@ -1,0 +1,16 @@
+{
+  "name": "introtonpm",
+  "version": "1.0.0",
+  "description": "quick re-up on npm for purposes of using mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "mongodb",
+    "nodejs"
+  ],
+  "author": "T. Sebi Santos",
+  "license": "ISC"
+}
