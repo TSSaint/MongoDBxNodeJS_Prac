@@ -8,7 +8,7 @@ app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
 
 // handler for internal server err
-function errorHandler(err.message);
+function errorHandler(err, req, res, next);
   console.error(err.message);
   console.error(err.stack);
   res.status(500).render('error', { error: err });
