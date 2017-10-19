@@ -16,7 +16,7 @@ function errorHandler(err, req, res, next) {
 }
 
 app.get('/', function( req, res, next) {
-  res.render('fruitPicker', {'fruits': ['watermelon','banana','apple','mango','peach','grapes','papaya','pineapple' ]});
+  res.render('fruitPicker', {'fruits': ['watermelon','banana','apple','mango','peach','grape','papaya','pineapple' ]});
 });
 
 app.post('/favorite_fruit', function(req, res, next) {
@@ -24,7 +24,7 @@ app.post('/favorite_fruit', function(req, res, next) {
   if (typeof favorite == 'undefined') {
     next('Choose a fruit!');
   } else {
-    res.send("Looks like your favorite fruit is a(n)" + favorite + "!");
+    res.send("Looks like your favorite fruit is a(n) " + favorite + "!");
   }
 });
 

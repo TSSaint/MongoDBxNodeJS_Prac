@@ -3,9 +3,19 @@
   <head>
     <title>Fruit Picker</title>
   </head>
+  <style type="text/css" media="screen">
+    body {
+      font-family: 'Gotham', 'Arial', sans-serif
+    }
+
+    .query {
+      font-weight: 700;
+      font-size: 48px;
+    }
+  </style>
   <body>
      <form action="/favorite_fruit" method="POST">
-        <p>What is your favorite fruit?</p>
+        <p class="query">What is your favorite fruit?</p>
         {% for fruit in fruits %}
           <p>
             <input type="radio" name="fruit" value="{{fruit}}"/>{{fruit}}
