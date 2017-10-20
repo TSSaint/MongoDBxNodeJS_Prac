@@ -22,7 +22,7 @@ app.get('/', function( req, res, next) {
 app.post('/favorite_fruit', function(req, res, next) {
   var favorite = req.body.fruit;
   if (typeof favorite == 'undefined') {
-    next(Error('Choose a fruit!');
+    next(Error('Choose a fruit!'));
   } else {
     res.send("Looks like your favorite fruit is a(n) " + favorite + "!");
   }
