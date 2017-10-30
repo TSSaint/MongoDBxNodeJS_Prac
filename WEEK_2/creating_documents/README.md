@@ -23,6 +23,17 @@ db.some_database.insertMany({
     ]
     }); 
 
+### Uniqueness of Underscored Ids
+MongoDB does not allow documents in collections/databases to share Ids. They must be unique, or will compile an error. If an insert command shares an id among multiple documents, the command will only insert documents in MongoDB until the error occurs. However, a Mongo command can be specified to keep running.
+Ex.
+```js
+( 
+{[
+    ...data
+]},
+{ "ordered":"false"}
+);
+```
 
 
 
