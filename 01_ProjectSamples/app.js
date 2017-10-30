@@ -17,7 +17,7 @@ function errorHandler(err, req, res, next) {
     res.status(500).render('error_template', { error: err });
 }
 
-MongoClient.connect('mongodb://localhost:27017/video', function(err, db) {
+MongoClient.connect('mongodb://localhost:27017/videos', function(err, db) {
     assert.equal(null, err);
     console.log("Successful connection established with MongoDB.");
 
