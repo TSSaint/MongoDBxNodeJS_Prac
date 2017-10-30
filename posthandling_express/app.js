@@ -7,7 +7,7 @@ app.engine('html', engines.nunjucks);
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
 app.use(bodyParser.urlencoded({ extended: true }));
-:
+
 // Handles internal server err
 function errorHandler(err, req, res, next) {
   console.error(err.message);
