@@ -21,6 +21,10 @@ MongoClient.connect('mongodb://localhost:27017/video', function(err, db) {
     assert.equal(null, err);
     console.log("Successful connection established with MongoDB.");
 
+    app.get('/', function(req, res, next) {
+        res.render('add_movie', {});
+    });
+
     app.post('/add_movie', function(req, res, next) {
         var title = req.body.title;
         var year = req.body.year;
