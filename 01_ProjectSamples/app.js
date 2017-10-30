@@ -25,5 +25,25 @@ MongoClient.connect('mongodb://localhost:27017/video', function(err, db) {
         var title = req.body.title;
         var year = req.body.year;
         var imdb = req.body.imdb;
+
+        if ((title === '') || (year === '') || (imdb === '')) {
+            next('Please provide an entry for all the fields.');
+        } else {
+            db.collection('movies').insertOne(
+                { 'title': title, 'year': year, 'imdb': imdb },
+                function (err, r) {
+                    assert.equal(null, err);
+                    res.send("Document inserted with _id: " + r.insertedId);
+                }
+            );
+        }
     });
+
+    app.use(errorHandler);
+
+    var server = app.listen(3000, function() {
+        var port = server.address().port;
+        console.log('Express server listening on port %s', port);
+    });
+
 });
