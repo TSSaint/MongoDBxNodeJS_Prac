@@ -35,6 +35,13 @@ Ex.
 );
 ```
 
+### Understanding the _id field
+MongoDB stores an _id value for each document in a collection by default. Secondary indexes are possible though.
 
-
+#### ObjectId:
+MongoDB creates a 12-byte hex string of ObjectId:
+[ 4 ]: Date
+[ 3 ]: Mac Address
+[ 2 ]: PID
+[ 3 ]: Counter
 
