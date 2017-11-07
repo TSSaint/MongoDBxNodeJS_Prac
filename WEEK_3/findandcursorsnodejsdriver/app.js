@@ -1,8 +1,8 @@
 // require Mongo and assert npm packages
-var Mongo = require('mongodb').Mongo;
+var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 
-Mongo.connect('mongodb://localhost:27017/crunchbase', function(err, db) {
+MongoClient.connect('mongodb://localhost:27017/crunchbase', function(err, db) {
 
   assert.equal(err, null);
   console.log("Succesfully connected to MongoDB.");
