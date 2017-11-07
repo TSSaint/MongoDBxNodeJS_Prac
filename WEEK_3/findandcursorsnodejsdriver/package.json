@@ -1,0 +1,11 @@
+{
+    "name": "findandcursorsnodejsdriver",
+    "version": "0.1.0",
+    "description": "Use the MongoDB driver to read documents using find",
+    "main": "app.js",
+    "dependencies": {
+        "mongodb": "~2.1.3"
+    },
+    "author": "Tom Santos",
+    "license": ""
+}
