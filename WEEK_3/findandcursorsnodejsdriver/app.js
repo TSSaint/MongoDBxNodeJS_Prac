@@ -23,3 +23,10 @@ MongoClient.connect('mongodb://localhost:27017/crunchbase', function(err, db) {
   });
 
 });
+
+// get $ node app.js
+// Succesfully connected to MongoDB.
+// 23andMeis a biotech company.
+// Genentechis a biotech company.
+// Nutra Pharmais a biotech company.
+// Posit Scienceis a biotech company.
